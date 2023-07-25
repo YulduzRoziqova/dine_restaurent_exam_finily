@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: League Spartan;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.headingXL {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+}
+
+.headingL {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+
+.headingM {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.headingS {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+}
+
+.text-1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.text-2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: League Spartan;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin-top: 25px;
+  padding: 25px 88px 23px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #17192B;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+header {
+  width: 100%;
+  color: #fff;
+  background-image: url(../img/desktop/booking/hero-bg-desktop.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+header .promo-page {
+  max-width: 1345px;
+  height: 840px;
+  margin: 0 auto;
+  margin-top: 80px;
+  background-image: url(../img/pattern/reserv.svg), url(../img/pattern/pattern-lines.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom, 650px 740px;
+  display: flex;
+  justify-content: space-between;
+}
+header .promo-page .promo_reserv {
+  margin-left: 120px;
+  max-width: 445px;
+}
+header .promo-page .promo_reserv .logo {
+  margin-bottom: 120px;
+}
+header .promo-page .promo_reserv p {
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+header .promo-page form {
+  padding: 50px 48px 48px;
+  width: 500px;
+  height: 600px;
+  margin-right: 120px;
+  margin-top: 150px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(30px);
+}
+header .promo-page form .error {
+  visibility: hidden;
+  color: #B54949;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.125px;
+}
+header .promo-page form .form-group {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+header .promo-page form .form-group .input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 29px;
+}
+header .promo-page form .form-group input {
+  margin-bottom: 12px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid #8E8E8E;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  outline: none;
+}
+header .promo-page form .date, header .promo-page form .time {
+  display: flex;
+  justify-content: space-between;
+  color: #111;
+  margin-top: 34px;
+}
+header .promo-page form .date select, header .promo-page form .time select {
+  width: 80px;
+  border: none;
+  border-bottom: 1px solid #8E8E8E;
+  appearance: none;
+  padding-bottom: 15px;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8E8E8E;
+  background-color: #fff;
+}
+header .promo-page form .date select option, header .promo-page form .time select option {
+  align-items: center;
+}
+header .promo-page form .people {
+  max-width: 444px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 17px;
+  margin-top: 34px;
+  border-bottom: 1px solid #8e8e8e;
+}
+header .promo-page form .people p {
+  color: #000;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  text-align: left;
+}
+header .promo-page form .people .minus, header .promo-page form .people .plus {
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  user-select: none;
+}
+header .error input {
+  color: #e53e3e;
+  outline: 1px solid #e53e3e;
+}
+header .error div {
+  margin-top: 10px;
+  color: #e53e3e;
+}
+
+main {
+  flex-grow: 1;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  color: #fff;
+  background: #111;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 78px;
+  padding-bottom: 76px;
+}
+footer .footer-content a {
+  align-self: start;
+}
+footer .footer-content div {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0.5;
+}
+footer .footer-content div .address, footer .footer-content div .worktime {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1035px) {
+  header {
+    width: 100%;
+    color: #fff;
+    background-image: url(../img/tablet/booking/hero-bg-tablet.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  header .promo-page {
+    max-width: 1345px;
+    height: 840px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-image: url(../img/pattern/reserv.svg), url(../img/pattern/pattern-lines.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, 650px 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .promo-page .promo_reserv {
+    margin-left: 50px;
+    max-width: 445px;
+  }
+  header .promo-page .promo_reserv .logo {
+    margin-bottom: 50px;
+  }
+  header .promo-page .promo_reserv p {
+    margin-top: 30px;
+    margin-bottom: 150px;
+  }
+  header .promo-page form {
+    padding: 50px 48px 48px;
+    width: 500px;
+    height: 600px;
+    margin-left: 100px;
+    margin-right: 120px;
+    margin-top: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-170px);
+  }
+  header .promo-page form .error {
+    visibility: hidden;
+    color: #B54949;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.125px;
+  }
+  header .promo-page form .form-group {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  header .promo-page form .form-group .input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 29px;
+  }
+  header .promo-page form .form-group input {
+    margin-bottom: 12px;
+    padding-bottom: 15px;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #8E8E8E;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    outline: none;
+  }
+  header .promo-page form .date, header .promo-page form .time {
+    display: flex;
+    justify-content: space-between;
+    color: #111;
+    margin-top: 34px;
+  }
+  header .promo-page form .date select, header .promo-page form .time select {
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid #8E8E8E;
+    appearance: none;
+    padding-bottom: 15px;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #8E8E8E;
+    background-color: #fff;
+  }
+  header .promo-page form .date select option, header .promo-page form .time select option {
+    align-items: center;
+  }
+  header .promo-page form .people {
+    max-width: 444px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 17px;
+    margin-top: 34px;
+    border-bottom: 1px solid #8e8e8e;
+  }
+  header .promo-page form .people p {
+    color: #000;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    text-align: left;
+  }
+  header .promo-page form .people .minus, header .promo-page form .people .plus {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  header .error input {
+    color: #e53e3e;
+    outline: 1px solid #e53e3e;
+  }
+  header .error div {
+    margin-top: 10px;
+    color: #e53e3e;
+  }
+  main {
+    flex-grow: 1;
+    background-color: white;
+  }
+  footer .footer-content {
+    padding-top: 64px;
+    padding-bottom: 62px;
+    gap: 50px;
+  }
+  footer .footer-content div {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 689px;
+    padding: 0 40px;
+  }
+  .headingXL {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -0.6px;
+  }
+  header {
+    background-image: url(../img/tablet/booking/hero-bg-tablet.jpg);
+    background-size: contain;
+  }
+  header .promo_page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  header .promo_page .logo {
+    margin-bottom: 70px;
+  }
+  header .promo_page .promo_content .text {
+    text-align: center;
+  }
+  header .promo_page .promo_content .text h1 {
+    margin-bottom: 12px;
+  }
+  header .promo_page .promo_content .text p {
+    max-width: 573px;
+  }
+  header .promo_page form {
+    transform: translateY(38px);
+    margin-bottom: 120px;
+  }
+  header .page {
+    height: 0;
+    background-image: none;
+  }
+  header .page svg {
+    display: none;
+  }
+  footer .footer-content {
+    padding-top: 64px;
+    padding-bottom: 62px;
+    gap: 50px;
+  }
+  footer .footer-content div {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media (max-width: 545px) {
+  .container {
+    max-width: 327px;
+    padding: 0 24px;
+  }
+  .headingXL {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+  }
+  .headingL {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+  }
+  .text-1 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  header {
+    background-image: url(../img/mobile/booking/hero-bg-mobile.jpg);
+  }
+  header .promo_page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  header .promo_page .logo {
+    margin-bottom: 44px;
+  }
+  header .promo_page .promo_content .text p {
+    margin-bottom: 19px;
+  }
+  header .promo_page form {
+    max-width: 300px;
+    height: 585px;
+    padding: 30px 30px 30px;
+  }
+  header .promo_page form .date, header .promo_page form .time {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .promo_page form button {
+    padding: 25px 20px;
+  }
+  footer .footer-content {
+    padding-top: 80px;
+    padding-bottom: 78px;
+    flex-direction: column;
+    text-align: center;
+    gap: 42px;
+  }
+  footer .footer-content a {
+    align-self: center;
+  }
+}
+@media (max-width: 340px) {
+  header .promo_page .promo_reserv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .promo_page .promo_reserv form {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+  }
+  header .promo_page .promo_reserv form .date select, header .promo_page .promo_reserv form .time select {
+    width: 20px;
+    font-size: 12 px;
+  }
+}/*# sourceMappingURL=booking.css.map */

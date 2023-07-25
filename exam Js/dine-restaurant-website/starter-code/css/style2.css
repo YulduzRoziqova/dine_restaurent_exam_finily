@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: League Spartan;
+}
+
+.headingXL {
+  color: #17192B;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+}
+
+.headingL {
+  color: #242B37;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+
+.headingM {
+  color: #17192B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.headingS {
+  color: #4C4C4C;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+}
+
+.text-1 {
+  color: #242B37;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.text-2 {
+  color: #17192B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 48px 23px;
+}
+.btn::after {
+  content: "BOOK A TABLE";
+}
+
+.btn-light {
+  color: #000;
+  border: 1px solid #111;
+}
+.btn-light:hover {
+  color: #fff;
+  background: #111;
+}
+
+.btn-dark {
+  color: #fff;
+  border: 1px solid #FFF;
+}
+.btn-dark:hover {
+  color: #17192B;
+  background: #fff;
+}
+
+.btn-inactive {
+  opacity: 0.25;
+}
+
+.decoration::after {
+  content: url(../img/.svg);
+}/*# sourceMappingURL=style2.css.map */
